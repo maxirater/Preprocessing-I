@@ -1,1 +1,259 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+}
+.jumbotron {
+  background: #eee;
+}
+.jumbotron .jumbo-container {
+  margin: 0 30px;
+  padding-top: 30px;
+}
+.jumbotron h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+.jumbotron h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px gray solid;
+}
+.jumbotron p {
+  margin-top: 20px;
+}
+.jumbotron button {
+  height: 40px;
+  width: 150px;
+  color: white;
+  background: gray;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 15px;
+}
+@media (max-width: 512px) {
+  background: gray;
+}
+.middle-text-area {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.middle-text-area h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.middle-text-area .left-text-area {
+  width: 50%;
+}
+.middle-text-area .stuff-good-at {
+  width: 50%;
+  margin-left: 30px;
+}
+.middle-text-area .stuff-good-at h3 {
+  padding: 10px 0;
+  font-size: 20px;
+}
+.middle-text-area .stuff-good-at .good-box {
+  border-top: 2px lightgray solid;
+  border-left: 2px lightgray solid;
+  border-right: 2px lightgray solid;
+  padding: 10px;
+}
+.middle-text-area .stuff-good-at .bottom-box {
+  border-bottom: 2px lightgray solid;
+}
+.work-history {
+  margin: 30px 0;
+}
+.work-history h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.work-history .work-history-container {
+  display: flex;
+  flex-direction: column;
+}
+.work-history .work-history-container .history-box {
+  display: flex;
+  border-top: 2px lightgray solid;
+  border-left: 2px lightgray solid;
+  border-right: 2px lightgray solid;
+  padding: 10px;
+}
+.work-history .work-history-container .history-box .yrs {
+  width: 10%;
+}
+.work-history .work-history-container .history-box .company {
+  width: 20%;
+}
+.work-history .work-history-container .history-box .title {
+  width: 40%;
+}
+.work-history .work-history-container .history-box .tech {
+  width: 20%;
+}
+.work-history .work-history-container .history-box .num {
+  font-weight: bold;
+}
+.work-history .work-history-container .box-shade {
+  background: #e8e8e8;
+}
+.work-history .work-history-container .top-box {
+  font-weight: bold;
+}
+.work-history .work-history-container .bottom-box {
+  border-bottom: 2px lightgray solid;
+}
+.copyright {
+  background: gray;
+  padding: 20px 0;
+  text-align: center;
+}
