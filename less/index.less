@@ -140,6 +140,39 @@ table {
 	box-sizing: border-box;
 }
 
+// START HERE ---------------------------
+
+@font-color: black;
+@grey-bg: lightgray;
+@copyright-bg: gray;
+
+.mobile-middle-area-layout() {
+	flex-direction: column;
+
+	.left-text-area {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		width: 80%;
+	}
+
+	.stuff-good-at {
+		width: 80%;
+	}
+}
+
+.cta-button() {
+	button {
+		height: 40px;
+		width: 150px;
+		color: white;
+		background: gray;
+		margin-top: 20px;
+		margin-bottom: 60px;
+		font-size: 15px;
+	}
+}
+
+
 html,
 body {
 	height: 100%;
@@ -157,11 +190,9 @@ nav {
 
 	a {
 		text-decoration: none;
-		color: black;
+		color: @font-color;
 		margin-left: 30px;
 	}
-
-
 }
 
 .jumbotron {
@@ -170,6 +201,10 @@ nav {
 	.jumbo-container {
 		margin: 0 30px;
 		padding-top: 30px;
+	}
+
+	img {
+		max-width: 75%;
 	}
 
 	h1 {
@@ -181,27 +216,16 @@ nav {
 		font-size: 25px;
 		margin-top: 20px;
 		padding-bottom: 20px;
-		border-bottom: 2px gray solid;
+		border-bottom: 2px @grey-bg;
 	}
 
 	p {
 		margin-top: 20px;
 	}
 
-	button {
-		height: 40px;
-		width: 150px;
-		color: white;
-		background: gray;
-		margin-top: 20px;
-		margin-bottom: 60px;
-		font-size: 15px;
-	}
+	.cta-button();
 
-}
 
-@media(max-width: 512px) {
-	background: gray;
 }
 
 .middle-text-area {
@@ -220,75 +244,87 @@ nav {
 	}
 
 	.stuff-good-at {
-		h3{
+		h3 {
 			padding: 10px 0;
 			font-size: 20px;
 		}
-width: 50%;
-margin-left: 30px;
-		.good-box{
-			border-top: 2px lightgray solid;
-			border-left: 2px lightgray solid;
-			border-right: 2px lightgray solid;
+
+		width: 50%;
+		margin-left: 30px;
+
+		.good-box {
+			border-top: 2px @grey-bg solid;
+			border-left: 2px @grey-bg solid;
+			border-right: 2px @grey-bg solid;
 			padding: 10px
 		}
 
-		.bottom-box{
-			border-bottom: 2px lightgray solid;
+		.bottom-box {
+			border-bottom: 2px @grey-bg solid;
 		}
+	}
+
+	@media (max-width: 500px) {
+		.mobile-middle-area-layout();
 	}
 }
 
 .work-history {
 	margin: 30px 0;
-	h3{
+
+	h3 {
 		font-size: 25px;
 		margin-bottom: 10px
 	}
 
-	.work-history-container{
+	.work-history-container {
 		display: flex;
 		flex-direction: column;
 
-		.history-box{
+		.history-box {
 			display: flex;
-			border-top: 2px lightgray solid;
-			border-left: 2px lightgray solid;
-			border-right: 2px lightgray solid;
+			border-top: 2px @grey-bg solid;
+			border-left: 2px @grey-bg solid;
+			border-right: 2px @grey-bg solid;
 			padding: 10px;
 
-			.yrs{
+			.yrs {
 				width: 10%;
 			}
-			.company{
-				width:20%;
-			}
-			.title{
-				width: 40%;
-			}
-			.tech{
+
+			.company {
 				width: 20%;
 			}
-			.num{
+
+			.title {
+				width: 40%;
+			}
+
+			.tech {
+				width: 20%;
+			}
+
+			.num {
 				font-weight: bold;
 			}
 		}
 
-		.box-shade{
+		.box-shade {
 			background: #e8e8e8;
 		}
 
-		.top-box{
+		.top-box {
 			font-weight: bold;
 		}
-		.bottom-box{
-			border-bottom: 2px lightgray solid;
+
+		.bottom-box {
+			border-bottom: 2px @grey-bg solid;
 		}
 	}
 }
 
 .copyright {
-	background: gray;
+	background: @copyright-bg;
 	padding: 20px 0;
 	text-align: center;
 }
